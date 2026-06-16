@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/spacing_sm"
+    android:layout_marginVertical="@dimen/spacing_xs"
+    app:cardCornerRadius="@dimen/corner_radius_md"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_md">
+
+        <!-- App icon + name/time + session count -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_sm">
+
+            <ImageView
+                android:id="@+id/stat_app_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stat_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_subtitle"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurface"
+                    tools:text="Instagram"
+                    xmlns:tools="http://schemas.android.com/tools" />
+
+                <TextView
+                    android:id="@+id/stat_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_caption"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    tools:text="Total time: 1h 30m"
+                    xmlns:tools="http://schemas.android.com/tools" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stat_session_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="12 check-ins"
+                xmlns:tools="http://schemas.android.com/tools" />
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pijon_surface_variant"
+            android:layout_marginBottom="@dimen/spacing_sm" />
+
+        <!-- Q1 section: Feeling -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stats_section_feeling"
+            android:textSize="@dimen/text_size_caption"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="@dimen/spacing_sm" />
+
+        <!-- Feeling: Good -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_btn_q1_positive"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/bar_feeling_pos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/pijon_positive"
+                app:trackColor="@color/pijon_surface_variant"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+            <TextView
+                android:id="@+id/pct_feeling_pos"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="60%"
+                xmlns:tools="http://schemas.android.com/tools" />
+        </LinearLayout>
+
+        <!-- Feeling: Meh -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_btn_q1_neutral"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/bar_feeling_neu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/pijon_neutral"
+                app:trackColor="@color/pijon_surface_variant"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+            <TextView
+                android:id="@+id/pct_feeling_neu"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="30%"
+                xmlns:tools="http://schemas.android.com/tools" />
+        </LinearLayout>
+
+        <!-- Feeling: Bad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_btn_q1_negative"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/bar_feeling_neg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/pijon_negative"
+                app:trackColor="@color/pijon_surface_variant"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+            <TextView
+                android:id="@+id/pct_feeling_neg"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="10%"
+                xmlns:tools="http://schemas.android.com/tools" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pijon_surface_variant"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:layout_marginBottom="@dimen/spacing_sm" />
+
+        <!-- Q2 section: Good use of time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stats_section_use"
+            android:textSize="@dimen/text_size_caption"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="@dimen/spacing_sm" />
+
+        <!-- Good Use: Yes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_btn_q2_positive"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/bar_use_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/pijon_positive"
+                app:trackColor="@color/pijon_surface_variant"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+            <TextView
+                android:id="@+id/pct_use_yes"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="80%"
+                xmlns:tools="http://schemas.android.com/tools" />
+        </LinearLayout>
+
+        <!-- Good Use: Unsure -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_btn_q2_neutral"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/bar_use_unsure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/pijon_neutral"
+                app:trackColor="@color/pijon_surface_variant"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+            <TextView
+                android:id="@+id/pct_use_unsure"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="10%"
+                xmlns:tools="http://schemas.android.com/tools" />
+        </LinearLayout>
+
+        <!-- Good Use: No -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_btn_q2_negative"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/bar_use_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                app:indicatorColor="@color/pijon_negative"
+                app:trackColor="@color/pijon_surface_variant"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+            <TextView
+                android:id="@+id/pct_use_no"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/text_size_caption"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="10%"
+                xmlns:tools="http://schemas.android.com/tools" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

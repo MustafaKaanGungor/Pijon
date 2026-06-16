@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Surface & Background (Dark) -->
+    <color name="pijon_background">#FF121212</color>
+    <color name="pijon_surface">#FF1E1E1E</color>
+    <color name="pijon_surface_variant">#FF2C2C2C</color>
+
+    <!-- Text (Dark) -->
+    <color name="pijon_text_primary">#FFE0E0E0</color>
+    <color name="pijon_text_secondary">#FF9E9E9E</color>
+    <color name="pijon_text_on_primary">#FF121212</color>
+
+    <!-- Overlay (Dark) -->
+    <color name="overlay_scrim">#CC000000</color>
+    <color name="overlay_card_bg">#FF2C2C2C</color>
+
+    <!-- Card stroke (Dark — lighter for visibility) -->
+    <color name="card_stroke">#1AFFFFFF</color>
+</resources>

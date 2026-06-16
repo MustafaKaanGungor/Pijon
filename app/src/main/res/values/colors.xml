@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors (shared between light & dark) -->
+    <color name="pijon_primary">#FF2196F3</color>
+    <color name="pijon_primary_dark">#FF1976D2</color>
+    <color name="pijon_primary_light">#FF64B5F6</color>
+    <color name="pijon_accent">#FFFFAB40</color>
+    <color name="pijon_accent_dark">#FFFF9100</color>
+
+    <!-- Surface & Background (Light) -->
+    <color name="pijon_background">#FFF5F7FA</color>
+    <color name="pijon_surface">#FFFFFFFF</color>
+    <color name="pijon_surface_variant">#FFEEF2F7</color>
+
+    <!-- Text (Light) -->
+    <color name="pijon_text_primary">#FF1A1D21</color>
+    <color name="pijon_text_secondary">#FF5F6B7A</color>
+    <color name="pijon_text_on_primary">#FFFFFFFF</color>
+
+    <!-- Status -->
+    <color name="pijon_active_green">#FF4CAF50</color>
+    <color name="pijon_inactive_gray">#FF9E9E9E</color>
+    <color name="pijon_positive">#FF43A047</color>
+    <color name="pijon_neutral">#FFFB8C00</color>
+    <color name="pijon_negative">#FFEF5350</color>
+
+    <!-- Overlay (Light) -->
+    <color name="overlay_scrim">#99000000</color>
+    <color name="overlay_card_bg">#FFFFFFFF</color>
+
+    <!-- Card stroke (Light) -->
+    <color name="card_stroke">#0D000000</color>
+
+    <!-- Defaults -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

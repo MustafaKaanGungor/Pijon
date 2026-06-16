@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Dark / Night) -->
+    <style name="Base.Theme.Pijon" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pijon_primary_light</item>
+        <item name="colorPrimaryDark">@color/pijon_primary</item>
+        <item name="colorAccent">@color/pijon_accent</item>
+        <item name="colorOnPrimary">#FF121212</item>
+        <item name="android:colorBackground">#FF121212</item>
+        <item name="colorSurface">#FF1E1E1E</item>
+        <item name="colorOnSurface">#FFE0E0E0</item>
+        <item name="colorOnSurfaceVariant">#FF9E9E9E</item>
+        <item name="android:statusBarColor">#FF121212</item>
+        <item name="android:navigationBarColor">#FF1E1E1E</item>
+    </style>
+</resources>

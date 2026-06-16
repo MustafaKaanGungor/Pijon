@@ -1,0 +1,102 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Pijon</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Fragment -->
+    <string name="home_status_active">Pijon is Active</string>
+    <string name="home_status_inactive">Pijon is Inactive</string>
+    <string name="home_monitoring_count">Monitoring %d apps</string>
+    <string name="home_no_apps">No apps selected. Tap \"Apps\" to choose which apps to monitor.</string>
+    <string name="home_toggle_start">Start Pijon</string>
+    <string name="home_toggle_stop">Stop Pijon</string>
+
+    <!-- App Selection Fragment -->
+    <string name="app_selection_title">Select Apps</string>
+    <string name="app_selection_search_hint">Search apps…</string>
+    <string name="app_selection_loading">Loading installed apps…</string>
+
+    <!-- Settings Fragment -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_timer_label">Reminder Interval</string>
+    <string name="settings_timer_value">%s</string>
+    <string name="settings_sound_label">Notification Sound</string>
+    <string name="settings_vibration_label">Vibration</string>
+    <string name="settings_global_label">Enable Pijon</string>
+    <string name="settings_about_label">About</string>
+    <string name="settings_version">Pijon v1.0</string>
+
+    <!-- Overlay Pop-up -->
+    <string name="overlay_title">🐦 Pijon Reminder</string>
+    <string name="overlay_message">You have been using %1$s for %2$s.</string>
+    <string name="overlay_countdown_hint">Take a deep breath</string>
+
+    <!-- Countdown hint messages — picked randomly each time the overlay appears -->
+    <string-array name="countdown_hints">
+        <item>Take a deep breath</item>
+        <item>Take a step back</item>
+    </string-array>
+
+    <!-- Q1: Feeling -->
+    <string name="overlay_question1">How did this last %s make me feel?</string>
+    <string name="overlay_btn_q1_positive">😊 Good</string>
+    <string name="overlay_btn_q1_neutral">😐 Meh</string>
+    <string name="overlay_btn_q1_negative">😞 Bad</string>
+
+    <!-- Q2: Value -->
+    <string name="overlay_question2">Was this a good use of my time?</string>
+    <string name="overlay_btn_q2_positive">👍 Yes</string>
+    <string name="overlay_btn_q2_neutral">🤔 Unsure</string>
+    <string name="overlay_btn_q2_negative">👎 No</string>
+
+    <string name="overlay_btn_done">Done</string>
+
+    <!-- Stats / Insights -->
+    <string name="stats_title">Insights</string>
+    <string name="stats_period_today">Today</string>
+    <string name="stats_period_week">This Week</string>
+    <string name="stats_period_all">All Time</string>
+    <string name="stats_empty">No data yet.\nStart using Pijon to see your insights here.</string>
+    <string name="stats_check_ins">%d check-ins</string>
+    <string name="stats_section_feeling">How did you feel?</string>
+    <string name="stats_section_use">Good use of time?</string>
+    <string name="stats_app_total_time">Total time: %s</string>
+    <string name="stats_summary_time">%s total time recorded</string>
+    <string name="stats_summary_sessions">%d check-ins</string>
+
+    <!-- Export (lives in Settings) -->
+    <string name="settings_export_label">Export Data</string>
+    <string name="settings_export_desc">Share your full reflection history as a CSV file</string>
+    <string name="settings_export_btn">Export All Data as CSV</string>
+    <string name="stats_export_title">Export Pijon Data</string>
+    <string name="stats_export_error">Export failed. Please try again.</string>
+    <string name="stats_export_empty">No data to export.</string>
+
+    <!-- Clear History (lives in Settings) -->
+    <string name="settings_clear_label">Clear History</string>
+    <string name="settings_clear_desc">Permanently delete all your reflection data</string>
+    <string name="settings_clear_btn">Clear All History</string>
+    <string name="settings_clear_confirm_title">Clear History?</string>
+    <string name="settings_clear_confirm_msg">This will permanently delete all your reflection data. This cannot be undone.</string>
+    <string name="settings_clear_confirm_yes">Clear</string>
+    <string name="settings_clear_success">History cleared</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Pijon Monitoring</string>
+    <string name="notification_channel_desc">Persistent notification while Pijon is monitoring your app usage.</string>
+    <string name="notification_title">Pijon is active</string>
+    <string name="notification_text">Monitoring your selected apps</string>
+
+    <!-- Permissions -->
+    <string name="perm_usage_stats_title">Usage Access Required</string>
+    <string name="perm_usage_stats_message">Pijon needs access to usage stats to detect which app you\'re using. You\'ll be taken to Settings to grant this permission.</string>
+    <string name="perm_overlay_title">Overlay Permission Required</string>
+    <string name="perm_overlay_message">Pijon needs to display over other apps to show reminders. You\'ll be taken to Settings to grant this permission.</string>
+    <string name="perm_btn_grant">Grant</string>
+    <string name="perm_btn_later">Later</string>
+</resources>
