@@ -1,6 +1,10 @@
-# 🐦 Pijon
+<p align="center">
+  <img src="docs/PijonIconPNG.png" width="96" alt="Pijon icon" />
+</p>
 
-**Mindful phone usage, one reminder at a time.**
+# Pijon
+
+<p align="center"><strong>Mindful phone usage, one reminder at a time.</strong></p>
 
 Pijon is an Android app that nudges you to reflect on your screen time — without blocking or restricting anything. You decide which apps to monitor, and Pijon will periodically ask how you're feeling about your usage.
 
@@ -71,3 +75,7 @@ All data stays on your device. Pijon never sees what you do inside any app — o
 | Database | Room (SQLite) |
 | Background | Foreground Service + Handler |
 | Overlay | WindowManager (`TYPE_APPLICATION_OVERLAY`) |
+
+---
+
+> Full design spec: [docs/SPECIFICATIONS.md](docs/SPECIFICATIONS.md)
